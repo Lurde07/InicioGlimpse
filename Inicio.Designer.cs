@@ -331,6 +331,7 @@ namespace Inicioo
             this.Controls.Add(this.btnTendencias);
             this.Controls.Add(this.btnVideos);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

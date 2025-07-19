@@ -135,5 +135,50 @@
   <ItemGroup>
     <Folder Include="historias\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfilUsuario.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -142,40 +142,78 @@ namespace Inicioo
 
         }
 
+        // GLIMPSE NOW ---------------------------------------------------------------------------------------------------
+
         // Simula una lista de historias (imágenes temporales en memoria)
         List<Image> historias = new List<Image>();
-        int historiaActual = 0;
+        private Image historiaUsuario = null;
+
 
 
         private void btnGlimpseNow_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Imágenes|*.jpg;*.jpeg;*.png";
-             if (ofd.ShowDialog() == DialogResult.OK)
-             {
-                 Image img = Image.FromFile(ofd.FileName);
-                 historias.Insert(0, img); // Tu historia va al inicio
-                 MessageBox.Show("Historia subida. Ve a verla en tu perfil");
-             }
+            ofd.Title = "Selecciona tu glimps";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                Image img = Image.FromFile(ofd.FileName);
+                historiaUsuario = img;
+                MessageBox.Show("¡Tu glimpse fue subido con éxito!. Ve a verlo en tu perfil.");
+            }
 
         }
 
         private void btnhistoria1_Click(object sender, EventArgs e)
         {
-            if (historias.Count > 0)
+            if (historiaUsuario != null)
             {
-                GlimpsNowViewer viewer = new GlimpsNowViewer(historias);
-                viewer.Show();
+
             }
             else
             {
-                MessageBox.Show("Aún no has subido una historia 🥲");
+                MessageBox.Show("No has subido ningún glimpse. Ve a ver los de las demás <3.");
             }
         }
 
         private void btnhistoria2_Click(object sender, EventArgs e)
         {
-         
+            List<Image> historias = new List<Image>
+            {
+                Properties.Resources.fake1,
+                Properties.Resources.fake2,
+                Properties.Resources.fake3,
+                Properties.Resources.fake4,
+                Properties.Resources.fake5,
+                Properties.Resources.fake6,
+                Properties.Resources.fake7
+            };
+
+            List<string> nombres = new List<string>
+            {
+                "madisonbeer",
+                "sabrinacarpenter",
+                "lilyrose_depp",
+                "arianagrande",
+                "kendalljenner",
+                "haileybieber",
+                "jennierubyjane"
+            };
+
+            List<Image> perfiles = new List<Image>
+            {
+                Properties.Resources.perfil1,
+                Properties.Resources.perfil2,
+                Properties.Resources.perfil3,
+                Properties.Resources.perfil4,
+                Properties.Resources.perfil5,
+                Properties.Resources.perfil6,
+                Properties.Resources.perfil7
+            };
+
+            GlimpsNowViewer viewer = new GlimpsNowViewer(historias, perfiles, nombres);
+            viewer.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

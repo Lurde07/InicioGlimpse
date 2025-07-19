@@ -124,4 +124,49 @@
   <data name="corazon_vacio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corazon_vacio.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fake1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake4.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake6.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fake7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fake7.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil4.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil5.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil6.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfil7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfil7.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="perfilUsuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perfilUsuario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
