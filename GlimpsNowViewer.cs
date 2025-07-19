@@ -27,13 +27,15 @@ namespace Inicioo
         private List<string> nombres;
         private int indiceActual;
 
-        public GlimpsNowViewer(List<Image> historiasFake, List<Image> perfilesFake, List<string> nombresFake)
+        private bool esHistoriaUsuarioUnica;
+        public GlimpsNowViewer(List<Image> historiasFake, List<Image> perfilesFake, List<string> nombresFake, bool soloHistoriaUsuario = false)
         {
             InitializeComponent();
             historias = historiasFake;
             perfiles = perfilesFake;
             nombres = nombresFake;
             indiceActual = 0;
+            esHistoriaUsuarioUnica = soloHistoriaUsuario;
             MostrarHistoria();
         }
 
@@ -64,19 +66,65 @@ namespace Inicioo
             }
             else
             {
-                DialogResult resultado = MessageBox.Show(
-                    "No hay más historias por ver.\n¿Quieres cerrar esta ventana?",
-                    "Fin de historias",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Information
-                );
-
-                if (resultado == DialogResult.Yes)
+                if (esHistoriaUsuarioUnica)
                 {
+                    // Cierra esta ventana
                     this.Close();
+
+                    // Abre el nuevo viewer con las historias fake
+                    List<Image> historiasFake = new List<Image>
+                    {
+                        Properties.Resources.fake1,
+                        Properties.Resources.fake2,
+                        Properties.Resources.fake3,
+                        Properties.Resources.fake4,
+                        Properties.Resources.fake5,
+                        Properties.Resources.fake6,
+                        Properties.Resources.fake7
+                    };
+
+                    List<Image> perfilesFake = new List<Image>
+                    {
+                        Properties.Resources.perfil1,
+                        Properties.Resources.perfil2,
+                        Properties.Resources.perfil3,
+                        Properties.Resources.perfil4,
+                        Properties.Resources.perfil5,
+                        Properties.Resources.perfil6,
+                        Properties.Resources.perfil7
+                    };
+
+                    List<string> nombresFake = new List<string>
+                    {
+                        "madisonbeer",
+                        "sabrinacarpenter",
+                        "lilyrose_depp",
+                        "arianagrande",
+                        "kendalljenner",
+                        "haileybieber",
+                        "jennierubyjane"
+                    };
+
+                    GlimpsNowViewer viewer = new GlimpsNowViewer(historiasFake, perfilesFake, nombresFake);
+                    viewer.Show();
                 }
-                // Si elige No, simplemente se queda viendo la historia actual.
+                else
+                {
+                    DialogResult resultado = MessageBox.Show(
+                        "No hay más glimpeses.\n¿Quieres cerrar esta ventana?",
+                        "Último Glimpse",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information
+                    );
+
+                    if (resultado == DialogResult.Yes)
+                    {
+                        this.Close();
+                    }
+                }
+            }
+
             }
         }
     }
-}
+

@@ -44,7 +44,7 @@ namespace Inicioo
             this.btnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnterior.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Bold);
             this.btnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(67)))), ((int)(((byte)(109)))));
-            this.btnAnterior.Location = new System.Drawing.Point(58, 310);
+            this.btnAnterior.Location = new System.Drawing.Point(58, 300);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(44, 46);
             this.btnAnterior.TabIndex = 8;
@@ -54,7 +54,7 @@ namespace Inicioo
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(141, 106);
+            this.pictureBox1.Location = new System.Drawing.Point(141, 96);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(283, 484);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,7 +65,7 @@ namespace Inicioo
             // 
             this.lblNombreUsuario.AutoSize = true;
             this.lblNombreUsuario.Font = new System.Drawing.Font("Calisto MT", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblNombreUsuario.Location = new System.Drawing.Point(197, 72);
+            this.lblNombreUsuario.Location = new System.Drawing.Point(197, 62);
             this.lblNombreUsuario.Name = "lblNombreUsuario";
             this.lblNombreUsuario.Size = new System.Drawing.Size(42, 17);
             this.lblNombreUsuario.TabIndex = 7;
@@ -78,7 +78,7 @@ namespace Inicioo
             this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSiguiente.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Bold);
             this.btnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(67)))), ((int)(((byte)(109)))));
-            this.btnSiguiente.Location = new System.Drawing.Point(447, 315);
+            this.btnSiguiente.Location = new System.Drawing.Point(447, 305);
             this.btnSiguiente.Margin = new System.Windows.Forms.Padding(0);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(44, 46);
@@ -89,7 +89,7 @@ namespace Inicioo
             // 
             // pictureBoxPerfil
             // 
-            this.pictureBoxPerfil.Location = new System.Drawing.Point(141, 54);
+            this.pictureBoxPerfil.Location = new System.Drawing.Point(141, 44);
             this.pictureBoxPerfil.Name = "pictureBoxPerfil";
             this.pictureBoxPerfil.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -169,7 +169,12 @@ namespace Inicioo
         {
             if (historiaUsuario != null)
             {
+                List<Image> listaUnica = new List<Image> { historiaUsuario };
+                List<Image> perfilUsuario = new List<Image> { Properties.Resources.perfilUsuario }; // o algo default
+                List<string> nombreUsuario = new List<string> { "tú <3" };
 
+                GlimpsNowViewer viewer = new GlimpsNowViewer(listaUnica, perfilUsuario, nombreUsuario, true);
+                viewer.Show();
             }
             else
             {
