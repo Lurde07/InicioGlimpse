@@ -173,7 +173,7 @@ namespace Inicioo
                 List<Image> perfilUsuario = new List<Image> { Properties.Resources.perfilUsuario }; // o algo default
                 List<string> nombreUsuario = new List<string> { "tú <3" };
 
-                GlimpsNowViewer viewer = new GlimpsNowViewer(listaUnica, perfilUsuario, nombreUsuario, true);
+                GlimpsNowViewer viewer = new GlimpsNowViewer(listaUnica, perfilUsuario, nombreUsuario, 0, true);
                 viewer.Show();
             }
             else
@@ -223,7 +223,21 @@ namespace Inicioo
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+        }
 
+        // NAVEGACIÓN---------------------------------------------------------------------------------------------------
+        private void label3_Click(object sender, EventArgs e)
+        {
+            GlimpseNow paginaHistorias = new GlimpseNow();
+            paginaHistorias.Show();
+            this.Hide();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            GlimpseNow paginaHistorias = new GlimpseNow();
+            paginaHistorias.Show();
+            this.Hide();
         }
     }
 }

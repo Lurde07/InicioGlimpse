@@ -21,20 +21,20 @@ namespace Inicioo
         {
 
         }
-
+        //HISTORIAS DEL INICIO---------------------------------------------------------------------------------------------------
         private List<Image> historias;
         private List<Image> perfiles;
         private List<string> nombres;
         private int indiceActual;
 
         private bool esHistoriaUsuarioUnica;
-        public GlimpsNowViewer(List<Image> historiasFake, List<Image> perfilesFake, List<string> nombresFake, bool soloHistoriaUsuario = false)
+        public GlimpsNowViewer(List<Image> historiasFake, List<Image> perfilesFake, List<string> nombresFake, int indiceInicio = 0, bool soloHistoriaUsuario = false)
         {
             InitializeComponent();
             historias = historiasFake;
             perfiles = perfilesFake;
             nombres = nombresFake;
-            indiceActual = 0;
+            indiceActual = indiceInicio;
             esHistoriaUsuarioUnica = soloHistoriaUsuario;
             MostrarHistoria();
         }
@@ -48,12 +48,13 @@ namespace Inicioo
                 lblNombreUsuario.Text = nombres[indiceActual];
             }
         }
+
         private void btnAnterior_Click(object sender, EventArgs e)
-        { 
+        {
             if (indiceActual > 0)
             {
                 indiceActual--;
-                pictureBox1.Image = historias[indiceActual];
+                MostrarHistoria();
             }
         }
 
@@ -123,8 +124,8 @@ namespace Inicioo
                     }
                 }
             }
-
-            }
         }
+        
     }
+}
 

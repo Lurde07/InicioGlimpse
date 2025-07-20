@@ -153,9 +153,10 @@ namespace Inicioo
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(67)))), ((int)(((byte)(109)))));
             this.label3.Location = new System.Drawing.Point(782, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 48);
+            this.label3.Size = new System.Drawing.Size(193, 48);
             this.label3.TabIndex = 13;
-            this.label3.Text = "GlipseNow!";
+            this.label3.Text = "GlimpseNow!";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnLogo
             // 
@@ -200,6 +201,7 @@ namespace Inicioo
             this.btn.Size = new System.Drawing.Size(30, 30);
             this.btn.TabIndex = 18;
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnTendenciasMenu
             // 

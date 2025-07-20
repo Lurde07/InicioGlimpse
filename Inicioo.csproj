@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlimpseNow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlimpseNow.Designer.cs">
+      <DependentUpon>GlimpseNow.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlimpsNowViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GlimpseNow.resx">
+      <DependentUpon>GlimpseNow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlimpsNowViewer.resx">
       <DependentUpon>GlimpsNowViewer.cs</DependentUpon>
     </EmbeddedResource>
