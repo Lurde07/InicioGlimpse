@@ -49,7 +49,11 @@ namespace Inicioo
             this.btnhistoria7 = new System.Windows.Forms.Button();
             this.btnhistoria8 = new System.Windows.Forms.Button();
             this.btnhistoria1 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -218,7 +222,7 @@ namespace Inicioo
             this.btnhistoria5.FlatAppearance.BorderSize = 0;
             this.btnhistoria5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhistoria5.Image = ((System.Drawing.Image)(resources.GetObject("btnhistoria5.Image")));
-            this.btnhistoria5.Location = new System.Drawing.Point(202, 472);
+            this.btnhistoria5.Location = new System.Drawing.Point(201, 472);
             this.btnhistoria5.Name = "btnhistoria5";
             this.btnhistoria5.Size = new System.Drawing.Size(98, 152);
             this.btnhistoria5.TabIndex = 33;
@@ -273,12 +277,34 @@ namespace Inicioo
             this.btnhistoria1.UseVisualStyleBackColor = true;
             this.btnhistoria1.Click += new System.EventHandler(this.btnhistoria1_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(797, 44);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(317, 403);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 39;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(797, 460);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(317, 219);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
+            // 
             // GlimpseNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnhistoria1);
             this.Controls.Add(this.btnhistoria8);
             this.Controls.Add(this.btnhistoria7);
@@ -302,6 +328,8 @@ namespace Inicioo
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GlimpseNow_";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +356,7 @@ namespace Inicioo
         private System.Windows.Forms.Button btnhistoria7;
         private System.Windows.Forms.Button btnhistoria8;
         private System.Windows.Forms.Button btnhistoria1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
