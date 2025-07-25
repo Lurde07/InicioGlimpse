@@ -31,11 +31,6 @@ namespace Inicioo
             PersonalizarBoton(btnVideos);
             PersonalizarBoton(btnTendencias);
             PersonalizarBoton(btnSubir);
-
-            // Mensajes de prueba para navegación
-            btnFotos.Click += (s, ev) => MessageBox.Show("Sección Fotos en construcción");
-            btnVideos.Click += (s, ev) => MessageBox.Show("Sección Videos en construcción");
-            btnTendencias.Click += (s, ev) => MessageBox.Show("Sección Tendencias en construcción");
         }
 
         private void PersonalizarBoton(Button btn)
@@ -239,5 +234,24 @@ namespace Inicioo
             paginaHistorias.Show();
             this.Hide();
         }
+
+        private void btnVideosMenu_Click(object sender, EventArgs e)
+        {
+            Videos videos = new Videos();
+            videos.Show();
+            this.Hide();
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnVideos_Click(object sender, EventArgs e)
+        {
+            Videos videos = new Videos();
+            videos.Show();
+            this.Hide();
+        }
+
     }
 }
