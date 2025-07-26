@@ -104,6 +104,7 @@ namespace Inicioo
             this.btnFotos.Size = new System.Drawing.Size(178, 217);
             this.btnFotos.TabIndex = 11;
             this.btnFotos.UseVisualStyleBackColor = true;
+            this.btnFotos.Click += new System.EventHandler(this.btnFotos_Click);
             // 
             // btnTendencias
             // 
@@ -194,6 +195,7 @@ namespace Inicioo
             this.button1.Size = new System.Drawing.Size(26, 23);
             this.button1.TabIndex = 18;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn
             // 

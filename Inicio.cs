@@ -253,5 +253,18 @@ namespace Inicioo
             this.Hide();
         }
 
+        private void btnFotos_Click(object sender, EventArgs e)
+        {
+            FotosScroll fotos = new FotosScroll();
+            fotos.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FotosScroll fotos = new FotosScroll();
+            fotos.Show();
+            this.Hide();
+        }
     }
 }

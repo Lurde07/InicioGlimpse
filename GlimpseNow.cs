@@ -78,7 +78,7 @@ namespace Inicioo
             }
             else
             {
-                MessageBox.Show("No has subido ningún glimpse.Ve a ver los de las demás < 3.");
+                MessageBox.Show("No has subido ningún glimpse.Ve a ver los de las demás <3.");
             }
         }
         private void btnhistoria2_Click(object sender, EventArgs e)
@@ -103,17 +103,17 @@ namespace Inicioo
 
         private void btnhistoria6_Click(object sender, EventArgs e)
         {
-            AbrirHistoriasFakeDesdeIndice(4); // 
+            AbrirHistoriasFakeDesdeIndice(4); 
         }
 
         private void btnhistoria7_Click(object sender, EventArgs e)
         {
-            AbrirHistoriasFakeDesdeIndice(5); // lilyrose_depp
+            AbrirHistoriasFakeDesdeIndice(5);
         }
 
         private void btnhistoria8_Click(object sender, EventArgs e)
         {
-            AbrirHistoriasFakeDesdeIndice(6); // lilyrose_depp
+            AbrirHistoriasFakeDesdeIndice(6); 
         }
 
         private void btnGlimpseNow_Click(object sender, EventArgs e)

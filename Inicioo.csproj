@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormGuardados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGuardados.Designer.cs">
+      <DependentUpon>FormGuardados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMeGusta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMeGusta.Designer.cs">
+      <DependentUpon>FormMeGusta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FotosScroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FotosScroll.Designer.cs">
+      <DependentUpon>FotosScroll.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlimpseNow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,12 @@
     <Compile Include="Videos.Designer.cs">
       <DependentUpon>Videos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormGuardados.resx">
+      <DependentUpon>FormGuardados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMeGusta.resx">
+      <DependentUpon>FormMeGusta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlimpseNow.resx">
       <DependentUpon>GlimpseNow.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +175,67 @@
     <None Include="Resources\corazon_vacio.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Boton1GlimpseNow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boton2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boton2GlimpseNow.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boton3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boton4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Boton5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Calendario.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fondo .jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fotos.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GlimpseNow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Guardados.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inicio.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Megusta.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Notificaciones.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Perfil.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Perfil.JPG" />
+    <Content Include="Tablero.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TableroGuardados.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TableroMeGusta.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Usuarios.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Videos\video1.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
