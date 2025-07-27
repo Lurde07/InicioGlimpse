@@ -110,6 +110,7 @@ namespace Inicioo
             this.txt_pass.Size = new System.Drawing.Size(252, 30);
             this.txt_pass.TabIndex = 11;
             this.txt_pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_pass.UseSystemPasswordChar = true;
             // 
             // txt_correoelectronico
             // 
@@ -179,6 +180,7 @@ namespace Inicioo
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio_de_sesión";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";

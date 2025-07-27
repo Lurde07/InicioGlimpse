@@ -29,6 +29,7 @@ namespace Inicioo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlimpsNowViewer));
             this.btnAnterior = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
@@ -107,6 +108,7 @@ namespace Inicioo
             this.Controls.Add(this.lblNombreUsuario);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.pictureBoxPerfil);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GlimpsNowViewer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GlimpsNowViewer";

@@ -69,6 +69,7 @@ namespace Inicioo
             this.txt_password.Size = new System.Drawing.Size(591, 37);
             this.txt_password.TabIndex = 12;
             this.txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_password.UseSystemPasswordChar = true;
             // 
             // txt_correo
             // 
@@ -151,6 +152,7 @@ namespace Inicioo
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Creación_cuentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear cuenta";

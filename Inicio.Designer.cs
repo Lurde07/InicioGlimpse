@@ -329,7 +329,7 @@ namespace Inicioo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.ClientSize = new System.Drawing.Size(1184, 749);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnhistoria1);
             this.Controls.Add(this.button3);
@@ -353,6 +353,7 @@ namespace Inicioo
             this.Controls.Add(this.btnFotos);
             this.Controls.Add(this.btnTendencias);
             this.Controls.Add(this.btnVideos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
