@@ -8,6 +8,8 @@ namespace Inicioo
 {
     public partial class FotosScroll : Form
     {
+        List<Image> historias = new List<Image>();
+        private Image historiaUsuario = null;
         public FotosScroll()
         {
             //Fondo y tamaño del form
@@ -122,12 +124,26 @@ namespace Inicioo
             };
             this.Controls.Add(img9);
 
+
             PictureBox img10 = new PictureBox();
             img10.Image = Image.FromFile("Boton1GlimpseNow.jpg");
             img10.SizeMode = PictureBoxSizeMode.StretchImage;
             img10.Size = new Size(310, 50);
             img10.Location = new Point(848, 460);
             img10.BackColor = Color.Transparent;
+            img10.Click += (s, e) =>
+            {
+                OpenFileDialog ofd = new OpenFileDialog();
+                ofd.Filter = "Imágenes|*.jpg;*.jpeg;*.png";
+                ofd.Title = "Selecciona tu glimps";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    Image img = Image.FromFile(ofd.FileName);
+                    historiaUsuario = img;
+                    MessageBox.Show("¡Subiste un nuevo Glimpse!");
+                }
+            };
             this.Controls.Add(img10);
 
             PictureBox img11 = new PictureBox();
@@ -136,6 +152,44 @@ namespace Inicioo
             img11.Size = new Size(310, 208);
             img11.Location = new Point(848, 510);
             img11.BackColor = Color.Transparent;
+            img10.Click += (s, e) =>
+            {
+                List<Image> historias = new List<Image>
+                {
+                    Properties.Resources.fake1,
+                    Properties.Resources.fake2,
+                    Properties.Resources.fake3,
+                    Properties.Resources.fake4,
+                    Properties.Resources.fake5,
+                    Properties.Resources.fake6,
+                    Properties.Resources.fake7
+                };
+
+                List<string> nombres = new List<string>
+                {
+                    "madisonbeer",
+                    "sabrinacarpenter",
+                    "lilyrose_depp",
+                    "arianagrande",
+                    "kendalljenner",
+                    "haileybieber",
+                    "jennierubyjane"
+                };
+
+                List<Image> perfiles = new List<Image>
+                {
+                    Properties.Resources.perfil1,
+                    Properties.Resources.perfil2,
+                    Properties.Resources.perfil3,
+                    Properties.Resources.perfil4,
+                    Properties.Resources.perfil5,
+                    Properties.Resources.perfil6,
+                    Properties.Resources.perfil7
+                };
+
+                GlimpsNowViewer viewer = new GlimpsNowViewer(historias, perfiles, nombres);
+                viewer.Show();
+            };
             this.Controls.Add(img11);
 
             PictureBox img12 = new PictureBox();
@@ -200,6 +254,12 @@ namespace Inicioo
             img17.Size = new Size(28, 26);
             img17.Location = new Point(40, 456);
             img17.BackColor = Color.Transparent;
+            img17.Click += (s, e) =>
+            {
+                Tendencias tendencias = new Tendencias();
+                tendencias.Show();
+                this.Close();
+            };
             this.Controls.Add(img17);
 
 

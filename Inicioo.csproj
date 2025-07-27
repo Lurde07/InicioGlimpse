@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contactos.Designer.cs">
+      <DependentUpon>Contactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creación_cuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creación_cuentas.Designer.cs">
+      <DependentUpon>Creación_cuentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGuardados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,12 @@
     <Compile Include="GlimpsNowViewer.Designer.cs">
       <DependentUpon>GlimpsNowViewer.cs</DependentUpon>
     </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,17 +118,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="Tendencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tendencias.Designer.cs">
+      <DependentUpon>Tendencias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Videos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Videos.Designer.cs">
       <DependentUpon>Videos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Contactos.resx">
+      <DependentUpon>Contactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creación_cuentas.resx">
+      <DependentUpon>Creación_cuentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGuardados.resx">
       <DependentUpon>FormGuardados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMeGusta.resx">
       <DependentUpon>FormMeGusta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FotosScroll.resx">
+      <DependentUpon>FotosScroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GlimpseNow.resx">
       <DependentUpon>GlimpseNow.cs</DependentUpon>
@@ -124,6 +157,9 @@
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -132,6 +168,9 @@
     <EmbeddedResource Include="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tendencias.resx">
+      <DependentUpon>Tendencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Videos.resx">
       <DependentUpon>Videos.cs</DependentUpon>
@@ -224,6 +263,33 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Perfil.JPG" />
+    <None Include="Resources\1.PNG" />
+    <None Include="Resources\2.PNG" />
+    <None Include="Resources\3.PNG" />
+    <None Include="Resources\4.PNG" />
+    <None Include="Resources\5.PNG" />
+    <None Include="Resources\barralila.PNG" />
+    <None Include="Resources\bermuda2.PNG" />
+    <None Include="Resources\blanco.PNG" />
+    <None Include="Resources\bolso1.PNG" />
+    <None Include="Resources\bolso2.PNG" />
+    <None Include="Resources\bolso3.PNG" />
+    <None Include="Resources\bolso4.PNG" />
+    <None Include="Resources\cinturon1.PNG" />
+    <None Include="Resources\gafas3.PNG" />
+    <None Include="Resources\gafas5.PNG" />
+    <None Include="Resources\pantalon1.PNG" />
+    <None Include="Resources\pantalon3.PNG" />
+    <None Include="Resources\pulseras5.PNG" />
+    <None Include="Resources\sandalia1.PNG" />
+    <None Include="Resources\sandalia3.PNG" />
+    <None Include="Resources\sandalia4.PNG" />
+    <None Include="Resources\top3.PNG" />
+    <None Include="Resources\vestido4.PNG" />
+    <None Include="Resources\vestido5.PNG" />
+    <None Include="Resources\top1.PNG" />
+    <None Include="Resources\top2.PNG" />
+    <None Include="Resources\Glimpse App, grupo 5.png" />
     <Content Include="Tablero.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

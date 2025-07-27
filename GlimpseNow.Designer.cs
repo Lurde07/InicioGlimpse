@@ -32,7 +32,6 @@ namespace Inicioo
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlimpseNow));
             this.btnRegresar = new System.Windows.Forms.Label();
             this.btnVideosMenu = new System.Windows.Forms.Button();
-            this.btnContacto = new System.Windows.Forms.Button();
             this.btnTendenciasMenu = new System.Windows.Forms.Button();
             this.btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -74,40 +73,31 @@ namespace Inicioo
             this.btnVideosMenu.FlatAppearance.BorderSize = 0;
             this.btnVideosMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVideosMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnVideosMenu.Image")));
-            this.btnVideosMenu.Location = new System.Drawing.Point(30, 380);
+            this.btnVideosMenu.Location = new System.Drawing.Point(30, 401);
             this.btnVideosMenu.Name = "btnVideosMenu";
             this.btnVideosMenu.Size = new System.Drawing.Size(26, 27);
             this.btnVideosMenu.TabIndex = 19;
             this.btnVideosMenu.UseVisualStyleBackColor = true;
-            // 
-            // btnContacto
-            // 
-            this.btnContacto.FlatAppearance.BorderSize = 0;
-            this.btnContacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContacto.Image = ((System.Drawing.Image)(resources.GetObject("btnContacto.Image")));
-            this.btnContacto.Location = new System.Drawing.Point(28, 480);
-            this.btnContacto.Name = "btnContacto";
-            this.btnContacto.Size = new System.Drawing.Size(30, 23);
-            this.btnContacto.TabIndex = 20;
-            this.btnContacto.UseVisualStyleBackColor = true;
+            this.btnVideosMenu.Click += new System.EventHandler(this.btnVideosMenu_Click);
             // 
             // btnTendenciasMenu
             // 
             this.btnTendenciasMenu.FlatAppearance.BorderSize = 0;
             this.btnTendenciasMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTendenciasMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnTendenciasMenu.Image")));
-            this.btnTendenciasMenu.Location = new System.Drawing.Point(25, 432);
+            this.btnTendenciasMenu.Location = new System.Drawing.Point(25, 453);
             this.btnTendenciasMenu.Name = "btnTendenciasMenu";
             this.btnTendenciasMenu.Size = new System.Drawing.Size(35, 23);
             this.btnTendenciasMenu.TabIndex = 21;
             this.btnTendenciasMenu.UseVisualStyleBackColor = true;
+            this.btnTendenciasMenu.Click += new System.EventHandler(this.btnTendenciasMenu_Click);
             // 
             // btn
             // 
             this.btn.FlatAppearance.BorderSize = 0;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
-            this.btn.Location = new System.Drawing.Point(28, 324);
+            this.btn.Location = new System.Drawing.Point(28, 345);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(30, 30);
             this.btn.TabIndex = 22;
@@ -118,18 +108,19 @@ namespace Inicioo
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(30, 277);
+            this.button1.Location = new System.Drawing.Point(30, 298);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(26, 23);
             this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnInicio
             // 
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
-            this.btnInicio.Location = new System.Drawing.Point(30, 221);
+            this.btnInicio.Location = new System.Drawing.Point(30, 242);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(25, 27);
             this.btnInicio.TabIndex = 24;
@@ -317,7 +308,6 @@ namespace Inicioo
             this.Controls.Add(this.btnGlimpseNow);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnVideosMenu);
-            this.Controls.Add(this.btnContacto);
             this.Controls.Add(this.btnTendenciasMenu);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.button1);
@@ -339,7 +329,6 @@ namespace Inicioo
 
         private System.Windows.Forms.Label btnRegresar;
         private System.Windows.Forms.Button btnVideosMenu;
-        private System.Windows.Forms.Button btnContacto;
         private System.Windows.Forms.Button btnTendenciasMenu;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Button button1;

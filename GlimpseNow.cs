@@ -125,7 +125,7 @@ namespace Inicioo
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 historiaUsuario = Image.FromFile(ofd.FileName);
-                MessageBox.Show("¡Tu glimpse fue subido con éxito!. Ve a verlo en tu perfil.");
+                MessageBox.Show("¡Subiste un nuevo Glimpse!");
             }
         }
 
@@ -153,6 +153,25 @@ namespace Inicioo
             this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FotosScroll fotos = new FotosScroll();
+            fotos.Show();
+            this.Close();
+        }
 
+        private void btnVideosMenu_Click(object sender, EventArgs e)
+        {
+            Videos videos = new Videos();
+            videos.Show();
+            this.Close();
+        }
+
+        private void btnTendenciasMenu_Click(object sender, EventArgs e)
+        {
+            Tendencias tendencias = new Tendencias();
+            tendencias.Show();
+            this.Close();
+        }
     }
 }

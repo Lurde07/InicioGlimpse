@@ -56,7 +56,7 @@ namespace Inicioo
             {
                 Image img = Image.FromFile(ofd.FileName);
                 historiaUsuario = img;
-                MessageBox.Show("¡Tu glimpse fue subido con éxito!. Ve a verlo en tu perfil.");
+                MessageBox.Show("¡Subiste un nuevo Glimpse!");
             }
         }
 
@@ -212,6 +212,47 @@ namespace Inicioo
             Inicio ventanaInicio = new Inicio();
             ventanaInicio.Show();
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FotosScroll fotos = new FotosScroll();
+            fotos.Show();
+            this.Close();
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            GlimpseNow paginaHistorias = new GlimpseNow();
+            paginaHistorias.Show();
+            this.Close();
+        }
+
+        private void btnVideosMenu_Click(object sender, EventArgs e)
+        {}
+
+        private void btnTendenciasMenu_Click(object sender, EventArgs e)
+        {
+            Tendencias tendencias = new Tendencias();
+            tendencias.Show();
+            this.Close();
+        }
+
+        private void btnContacto_Click(object sender, EventArgs e)
+        {
+            Contactos contactos = new Contactos();
+            contactos.Show();
+            this.Close();
+        }
+
+        private void btnlike_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡Le diste like al video!");
+        }
+
+        private void btnshare_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡Reposteaste este video!");
         }
     }
 }

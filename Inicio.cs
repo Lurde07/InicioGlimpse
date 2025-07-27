@@ -127,7 +127,7 @@ namespace Inicioo
             tarjeta.Controls.Add(imagen);
 
             // Agregar la tarjeta al panel principal del feed
-            feedPanel.Controls.Add(tarjeta); // ← Asegurate de que "feedPanel" exista
+            feedPanel.Controls.Add(tarjeta);
         }
 
 
@@ -155,7 +155,7 @@ namespace Inicioo
             {
                 Image img = Image.FromFile(ofd.FileName);
                 historiaUsuario = img;
-                MessageBox.Show("¡Tu glimpse fue subido con éxito!. Ve a verlo en tu perfil.");
+                MessageBox.Show("¡Subiste un nuevo Glimpse!");
             }
 
         }
@@ -265,6 +265,27 @@ namespace Inicioo
             FotosScroll fotos = new FotosScroll();
             fotos.Show();
             this.Hide();
+        }
+
+        private void btnTendencias_Click(object sender, EventArgs e)
+        {
+            Tendencias tendencias = new Tendencias();
+            tendencias.Show();
+            this.Hide();
+        }
+
+        private void btnTendenciasMenu_Click(object sender, EventArgs e)
+        {
+            Tendencias tendencias = new Tendencias();
+            tendencias.Show();
+            this.Hide();
+        }
+
+        private void btnContacto_Click(object sender, EventArgs e)
+        {
+            Contactos contactos = new Contactos();
+            contactos.Show();
+            this.Close();
         }
     }
 }

@@ -39,6 +39,7 @@ namespace Inicioo
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(440, 442);
             this.Name = "FormMeGusta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMeGusta";
             this.ResumeLayout(false);
 

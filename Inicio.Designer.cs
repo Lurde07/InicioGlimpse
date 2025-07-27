@@ -78,9 +78,9 @@ namespace Inicioo
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(67)))), ((int)(((byte)(109)))));
             this.label1.Location = new System.Drawing.Point(134, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 48);
+            this.label1.Size = new System.Drawing.Size(90, 48);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Hola, ";
+            this.label1.Text = "Hola!";
             // 
             // label2
             // 
@@ -118,6 +118,7 @@ namespace Inicioo
             this.btnTendencias.Size = new System.Drawing.Size(179, 217);
             this.btnTendencias.TabIndex = 10;
             this.btnTendencias.UseVisualStyleBackColor = true;
+            this.btnTendencias.Click += new System.EventHandler(this.btnTendencias_Click);
             // 
             // btnVideos
             // 
@@ -219,6 +220,7 @@ namespace Inicioo
             this.btnTendenciasMenu.Size = new System.Drawing.Size(35, 23);
             this.btnTendenciasMenu.TabIndex = 18;
             this.btnTendenciasMenu.UseVisualStyleBackColor = true;
+            this.btnTendenciasMenu.Click += new System.EventHandler(this.btnTendenciasMenu_Click);
             // 
             // btnVideosMenu
             // 
@@ -242,6 +244,7 @@ namespace Inicioo
             this.btnContacto.Size = new System.Drawing.Size(30, 23);
             this.btnContacto.TabIndex = 18;
             this.btnContacto.UseVisualStyleBackColor = true;
+            this.btnContacto.Click += new System.EventHandler(this.btnContacto_Click);
             // 
             // button5
             // 
