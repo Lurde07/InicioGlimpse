@@ -46,5 +46,10 @@ namespace Inicioo
 
             this.Close();
         }
+
+        private void Creación_cuentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
